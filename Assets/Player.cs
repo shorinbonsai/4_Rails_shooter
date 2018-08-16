@@ -6,16 +6,16 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
 
-    [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 20f;
+    [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 10f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
-    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 20f;
-    [Tooltip("In m")] [SerializeField] float yRange = 3f;
+    [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 10f;
+    [Tooltip("In m")] [SerializeField] float yRange = 2.5f;
 
     [SerializeField] float positionPitchFactor = -5f;
-    [SerializeField] float controlPitchFactor = -30f;
+    [SerializeField] float controlPitchFactor = -25f;
 
     [SerializeField] float positionYawFactor = 5f;
-    [SerializeField] float controlRollFactor = -20f;
+    [SerializeField] float controlRollFactor = -25f;
 
     float xThrow, yThrow;
 
