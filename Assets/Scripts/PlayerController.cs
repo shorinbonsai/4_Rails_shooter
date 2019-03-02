@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
     [Tooltip("In ms^-1")] [SerializeField] float xSpeed = 10f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
@@ -20,20 +20,11 @@ public class Player : MonoBehaviour {
     float xThrow, yThrow;
 
     // Use this for initialization
-    void Start () {
+    
 
-       
-    }
+    
 
-    void OnCollisionEnter(Collision collision)
-    {
-        print("Player hit something");
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        print("Player triggered something");
-    }
+    
 
     // Update is called once per frame
     void Update ()
